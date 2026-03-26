@@ -16,7 +16,6 @@ app.use(cors({
   credentials: true,
 }));
 
-// Better Auth handles all /api/auth/* routes
 app.all("/api/auth/*splat", toNodeHandler(auth));
 
 // Health check
